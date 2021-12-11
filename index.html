@@ -1,36 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/bus.icon" type="image/icon" />
+    <link rel="shortcut icon" href="img/bus.png" type="image/png" />
+    <script src="main.js" defer></script>
     <title>Busão</title>
 </head>
 <body>
-    <div class="bus">
-      <h1 class="titulo">Busão</h1>  
+    <div class="container">
+
+        <div class="title">
+            <h1>Busão</h1>  
+          </div>
+          <div class="message">
+              <h3>Encontre o seu ônibus em qualquer lugar, a qualquer hora!
+                  Saiba a melhor rota para chegar ao seu destino, sem 
+                  perder tanto tempo, e ainda poder curtir os seus filmes,
+                  séries e músicas favoritas!
+                  Cadastre-se e saiba mais! 
+              </h3>
+              <img class="bus" src="/img/bus1.jpg" alt="bus">
+          </div>
+          
+            <form>
+            <div class="sign-in">
+                <input class="client-name" type="text" name="name" aria-label="name" placeholder="Nome" value="" >
+                <input class="last-name"  type="text" name="last-name" aria-label="last-name" placeholder="Sobrenome" value="">
+                <h4 class="message">Data de Nascimento</h4>
+                <input class="birth" type="date" name="birth" aria-label="birth">
+
+                <div class="cep">
+                  <input type="text" name="cep" aria-label="cep" placeholder="Cep">
+                </div>
+                <div class="rua">
+                  <input type="text" name="rua" aria-label="rua" placeholder="Rua">
+                </div>
+                <div class="bairro">
+                  <input type="text" name="bairro" aria-label="bairro" placeholder="Bairro">
+                </div>
+                <div class="cidade">
+                  <input type="text" name="cidade" aria-label="cidade" placeholder="Cidade">
+                </div>
+                <div class="estado">
+                  <input type="text" name="estado" aria-label="estado" placeholder="Estado">
+                </div>
+                <div class="buttom">
+                <button class="create" aria-label="Criar uma conta" type="submit"> Cadastrar</button>
+            </div>
+          </div>
+            </form>
+              
+            
+          <div class="group">
+              <div class="login">
+                  <input class="email" type="text" name="email" aria-label="email" placeholder="Email" value="">
+              </div>
+              <div class="password">
+                  <input class="password" type="password" name="password" aria-label="password" placeholder="Senha" autocomplete="current-password" value="">
+              </div>
+              <div class="buttom">
+                  <button class="login" aria-label="Entrar" type="submit" >Entrar</button>
+              </div>
+              <div class="login-account">
+                  <a href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"> continuar com o Google</a>
+                  <a href="https://www.facebook.com/">continuar com o Facebook</a>
+              </div>
+              
+          </div>
+
     </div>
-    <div class="message">
-        <h3>Encontre o seu ônibus em qualquer lugar, a qualquer hora!
-            Saiba a melhor rota para chegar ao seu destino, sem 
-            perder tanto tempo, e ainda poder curtir os seus filmes,
-            séries e músicas favoritas!
-            Cadastre-se e saiba mais! 
-        </h3>
-    </div>
-    <div class="group">
-        <div class="login">
-            <input class="email" type="text" name="email" aria-label="email" placeholder="Email" value="">
-        </div>
-        <div class="password">
-            <input class="password" type="password" name="password" aria-label="password" placeholder="Senha" autocomplete="current-password" value="">
-        </div>
-        <div class="buttom">
-            <button class="login" aria-label="Entrar" type="submit" style="color: #000000; " >Entrar</button>
-        </div>
-    </div>
+    
     
     
 </body>
