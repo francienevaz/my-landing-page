@@ -19,4 +19,3 @@ function popularForm (resposta) {
     cidade.value = resposta.localidade;
     estado.value = resposta.uf;
 }
-
