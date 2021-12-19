@@ -7,28 +7,33 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/bus.png" type="image/png" />
     <script src="main.js" defer></script>
-    <title>Busão</title>
+    <title>NextStop</title>
 </head>
 <body>
     <div class="container">
 
         <div class="title">
-            <h1>Busão</h1>  
+            <h1>NextStop</h1>  
           </div>
           <div class="message">
               <h3>Encontre o seu ônibus em qualquer lugar, a qualquer hora!
                   Saiba a melhor rota para chegar ao seu destino, sem 
                   perder tanto tempo, e ainda poder curtir os seus filmes,
                   séries e músicas favoritas!
-                  Cadastre-se e saiba mais! 
+                  
               </h3>
           </div>
           
+          <div class="register">
+            <h4 class="txt"> Cadastre-se e saiba mais! </h4>
+            <br>
             <form>
             <div class="sign-in">
                 <input class="client-name" type="text" name="name" aria-label="name" placeholder="Nome" value="" >
                 <input class="last-name"  type="text" name="last-name" aria-label="last-name" placeholder="Sobrenome" value="">
-                <h4>Data de Nascimento</h4>
+                
+                <h4 style="color: dodgerblue; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 14px; margin-right: 50px; margin-bottom: 5px;">Data de Nascimento:</h4>
+
                 <input class="birth" type="date" name="birth" aria-label="birth">
 
                 <div class="cep">
@@ -54,8 +59,9 @@
               
             
           <div class="group">
+              <h4 class="txt">Já possui uma conta? Então faça o seu login!</h4>
               <div class="login">
-                  <input class="email" type="text" name="email" aria-label="email" placeholder="Email" value="">
+                  <input class="email" type="email" name="email" aria-label="email" placeholder="Email" value="">
               </div>
               <div class="password">
                   <input class="password" type="password" name="password" aria-label="password" placeholder="Senha" autocomplete="current-password" value="">
@@ -63,12 +69,16 @@
               <div class="buttom">
                   <button class="login" aria-label="Entrar" type="submit" >Entrar</button>
               </div>
+              <br>
               <div class="login-account">
                   <a href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"> continuar com o Google</a>
                   <a href="https://www.facebook.com/">continuar com o Facebook</a>
               </div>
               
           </div>
+          </div>
+
+            
 
     </div>
     
