@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/bus-stop.png" type="image/png" />
@@ -27,7 +27,7 @@
           <div class="register">
             <h4 class="txt"> Cadastre-se e saiba mais! </h4>
             <br>
-            <form>
+            <form method="get" action=".">
             <div class="sign-in">
                 <input class="client-name" type="text" name="name" aria-label="name" placeholder="Nome" value="" >
                 <input class="last-name"  type="text" name="last-name" aria-label="last-name" placeholder="Sobrenome" value="">
@@ -35,21 +35,31 @@
                 <h4 style="color: dodgerblue; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 14px; margin-right: 50px; margin-bottom: 5px;">Data de Nascimento:</h4>
 
                 <input class="birth" type="date" name="birth" aria-label="birth">
-
+                
                 <div class="cep">
-                  <input type="text" name="cep" aria-label="cep" placeholder="Cep">
+                  <label>
+                  <input id="cep" type="text" name="cep" aria-label="cep" placeholder="Cep" size="10" maxlength="9" onblur="pesquisacep(this.value);">
+                </label>
                 </div>
                 <div class="rua">
-                  <input type="text" name="rua" aria-label="rua" placeholder="Rua">
+                  <label>
+                    <input id="rua"  type="text" name="rua" aria-label="rua" placeholder="Rua" >
+                  </label>                  
                 </div>
                 <div class="bairro">
-                  <input type="text" name="bairro" aria-label="bairro" placeholder="Bairro">
+                  <label >
+                    <input id="bairro" type="text" name="bairro" aria-label="bairro" placeholder="Bairro">
+                  </label>                  
                 </div>
                 <div class="cidade">
-                  <input type="text" name="cidade" aria-label="cidade" placeholder="Cidade">
+                  <label>
+                    <input id="cidade" type="text" name="cidade" aria-label="cidade" placeholder="Cidade"> 
+                  </label>                  
                 </div>
                 <div class="estado">
-                  <input type="text" name="estado" aria-label="estado" placeholder="Estado">
+                  <label>
+                    <input id="uf" type="text" name="estado" aria-label="estado" placeholder="Estado" size="2">
+                  </label>                  
                 </div>
                 <div class="buttom">
                 <button class="create" aria-label="Criar uma conta" type="submit"> Cadastrar</button>
